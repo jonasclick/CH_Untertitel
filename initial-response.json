@@ -1,0 +1,26 @@
+{
+    "self": "https://switzerlandnorth.api.cognitive.microsoft.com/speechtotext/v3.1/transcriptions/6cc87db8-bcc9-49df-a870-a834dcbc65fd",
+    "model": {
+        "self": "https://switzerlandnorth.api.cognitive.microsoft.com/speechtotext/v3.1/models/base/e01b5ad9-1d1b-4288-a654-a9257f4d4691"
+    },
+    "links": {
+        "files": "https://switzerlandnorth.api.cognitive.microsoft.com/speechtotext/v3.1/transcriptions/6cc87db8-bcc9-49df-a870-a834dcbc65fd/files"
+    },
+    "properties": {
+        "diarizationEnabled": false,
+        "wordLevelTimestampsEnabled": false,
+        "displayFormWordLevelTimestampsEnabled": true,
+        "channels": [
+            0,
+            1
+        ],
+        "punctuationMode": "DictatedAndAutomatic",
+        "profanityFilterMode": "Masked"
+    },
+    "lastActionDateTime": "2024-04-07T04:02:48Z",
+    "status": "NotStarted",
+    "createdDateTime": "2024-04-07T04:02:48Z",
+    "locale": "en-US",
+    "displayName": "My Transcription",
+    "description": "Speech Studio Batch speech to text"
+}

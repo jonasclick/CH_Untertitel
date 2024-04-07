@@ -1,0 +1,40 @@
+{
+  "values": [
+    {
+      "self": "https://switzerlandnorth.api.cognitive.microsoft.com/speechtotext/v3.1/transcriptions/1bb23dfe-feb4-46df-b0dd-78dbd77af3b6/files/24d91451-9e19-4a56-bd7a-ae9a9de66dd1",
+      "name": "contenturl_0.json",
+      "kind": "Transcription",
+      "properties": {
+        "size": 997
+      },
+      "createdDateTime": "2024-04-07T03:29:56Z",
+      "links": {
+        "contentUrl": "https://spsvcprodswn.blob.core.windows.net/customspeech-artifacts/TranscriptionData/1bb23dfe-feb4-46df-b0dd-78dbd77af3b6_0_0.json?skoid=bcf2ee0b-578a-4a6f-9339-a3a51c4d8c23&sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d&skt=2024-04-07T03%3A25%3A07Z&ske=2024-04-12T03%3A30%3A07Z&sks=b&skv=2023-11-03&sv=2023-11-03&st=2024-04-07T03%3A25%3A07Z&se=2024-04-07T15%3A30%3A07Z&sr=b&sp=rl&sig=ohjGiMZuPmBXMPJlEmUBfVtvLsqLHVqK68qvQjiaAac%3D"
+      }
+    },
+    {
+      "self": "https://switzerlandnorth.api.cognitive.microsoft.com/speechtotext/v3.1/transcriptions/1bb23dfe-feb4-46df-b0dd-78dbd77af3b6/files/e2699149-9acf-4432-961b-9a90cc0fa212",
+      "name": "contenturl_1.json",
+      "kind": "Transcription",
+      "properties": {
+        "size": 1828
+      },
+      "createdDateTime": "2024-04-07T03:29:56Z",
+      "links": {
+        "contentUrl": "https://spsvcprodswn.blob.core.windows.net/customspeech-artifacts/TranscriptionData/1bb23dfe-feb4-46df-b0dd-78dbd77af3b6_1_0.json?skoid=bcf2ee0b-578a-4a6f-9339-a3a51c4d8c23&sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d&skt=2024-04-07T03%3A25%3A07Z&ske=2024-04-12T03%3A30%3A07Z&sks=b&skv=2023-11-03&sv=2023-11-03&st=2024-04-07T03%3A25%3A07Z&se=2024-04-07T15%3A30%3A07Z&sr=b&sp=rl&sig=RrR8c%2FagWFoGGxjAb2pbcQuBLAUZNa1WEjGHo%2BGoHgc%3D"
+      }
+    },
+    {
+      "self": "https://switzerlandnorth.api.cognitive.microsoft.com/speechtotext/v3.1/transcriptions/1bb23dfe-feb4-46df-b0dd-78dbd77af3b6/files/0ffce0eb-ef68-4055-8445-dce96643a8e5",
+      "name": "report.json",
+      "kind": "TranscriptionReport",
+      "properties": {
+        "size": 279
+      },
+      "createdDateTime": "2024-04-07T03:29:56Z",
+      "links": {
+        "contentUrl": "https://spsvcprodswn.blob.core.windows.net/customspeech-artifacts/TranscriptionData/1bb23dfe-feb4-46df-b0dd-78dbd77af3b6_report.json?skoid=bcf2ee0b-578a-4a6f-9339-a3a51c4d8c23&sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d&skt=2024-04-07T03%3A25%3A07Z&ske=2024-04-12T03%3A30%3A07Z&sks=b&skv=2023-11-03&sv=2023-11-03&st=2024-04-07T03%3A25%3A07Z&se=2024-04-07T15%3A30%3A07Z&sr=b&sp=rl&sig=OdSvGZ%2BYmqXhlZl26cYCNg4inrqm6BEwmmAGoEXW%2FjI%3D"
+      }
+    }
+  ]
+}
