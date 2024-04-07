@@ -3,6 +3,7 @@ import json
 import time
 from dotenv import load_dotenv
 import os
+import datetime
 
 load_dotenv()
 
@@ -97,12 +98,45 @@ def get_transcription_results():
             else:
                 print("Failed to fetch transcription result files.")
         else:
-            print(f"Transcription is not yet completed. Status: {status}. Sleeping for 10 seconds...")
-            time.sleep(10)
+            print(f"Transcription is not yet completed. Status: {status}. Sleeping for 5 seconds...")
+            time.sleep(5)
             get_transcription_results()
     else:
         print("Failed to check transcription status.")
+
+
+# Convert an ISO 8601 duration to an SRT timestamp ––> This can only handle seconds. No minutes, hours yet.
+def convert_to_srt_timestamp(iso_duration):
+    # Remove the 'PT' prefix and the 'S' suffix
+    seconds = float(iso_duration[2:-1])
+    # Convert seconds to a time object
+    time = datetime.timedelta(seconds=seconds)
+    # Format the time object as an SRT timestamp
+    return str(time)
+
+
+def transcription_to_srt():
+    # Import the JSON data from the transcription-content.json file
+    with open('transcription-content.json', 'r') as file:
+        data = json.load(file)
     
+    # Strip the JSON to get only the displayWords
+    display_words = data['recognizedPhrases'][0]['nBest'][0]['displayWords']
+
+    with open('output.srt', 'w') as f:
+        for i, word in enumerate(display_words, start=1):
+            # Write the index
+            f.write(str(i) + '\n')
+            # Write the start and end timestamps
+            start = convert_to_srt_timestamp(word['offset'])
+            end = convert_to_srt_timestamp(word['duration'])
+            f.write(start + ' --> ' + end + '\n')
+            # Write the display text
+            f.write(word['displayText'] + '\n\n')
+    
+    print("SRT file created.")
+
 
 request_transcription()
 get_transcription_results()
+transcription_to_srt()
